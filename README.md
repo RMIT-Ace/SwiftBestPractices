@@ -1,12 +1,14 @@
 # Swift Best Practices
 
-[Visit site ⎆](https://rmit-ace.github.io/SwiftBestPractices/)
 
  Practical guide to programming projects with Swift.
 
 Starting this project, I went looking for references and found that the Swift community already has excellent, authoritative guides. Rather than write a new one from scratch, this repo curates the best of them, adds a recommended Xcode project structure, and keeps everything in one place.
 
 Keep watching this space. More to come.
+
+[Visit site ⎆](https://rmit-ace.github.io/SwiftBestPractices/) | 
+[Github Repo ⎆](https://github.com/RMIT-Ace/SwiftBestPractices)
 
 ---
 
