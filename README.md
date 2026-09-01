@@ -1,23 +1,35 @@
-# SwiftBestPractices
-Practical guide to programming projects with Swift
+# Swift Best Practices
 
-Mention here that I was starting working on this project and look around for references and found that there are good recommendations everywhere - no need to write up new one.
+ Practical guide to programming projects with Swift.
 
-# References
+Starting this project, I went looking for references and found that the Swift community already has excellent, authoritative guides. Rather than write a new one from scratch, this repo curates the best of them, adds a recommended Xcode project structure, and keeps everything in one place.
 
-1. https://www.swift.org/documentation/api-design-guidelines/
-2. ⭐️⭐️⭐️ https://google.github.io/swift/
-3. Managing files and folders in your Xcode project
-4. https://github.com/github/swift-style-guide
-5. https://github.com/kodecocodes/swift-style-guide
-6. Linting
-    1. For linting 👉 https://github.com/realm/SwiftLint (open source community own)
-    2. For auto-formatting 👉 https://github.com/swiftlang/swift-format (Apple’s own)
-    3. Plug-ins: https://github.com/SimplyDanny/SwiftLintPlugins
+Keep watching this space. More to come.
 
+---
 
-# Xcode Project Organisation
-Recommended Folder Structure (mention that this was recommended by Claude - which I think I can agree upon)
+## References
+
+| Guide | Source |
+|---|---|
+| [Swift API Design Guidelines](https://www.swift.org/documentation/api-design-guidelines/) | Apple / Swift.org |
+| [Google Swift Style Guide](https://google.github.io/swift/) | Google |
+| [GitHub Swift Style Guide](https://github.com/github/swift-style-guide) | GitHub |
+| [Kodeco Swift Style Guide](https://github.com/kodecocodes/swift-style-guide) | Kodeco |
+
+### Linting & Formatting Tools
+
+| Tool | Purpose |
+|---|---|
+| [SwiftLint](https://github.com/realm/SwiftLint) | Linting — community-owned, enforce style at build time |
+| [swift-format](https://github.com/swiftlang/swift-format) | Auto-formatting — Apple's own |
+| [SwiftLintPlugins](https://github.com/SimplyDanny/SwiftLintPlugins) | SPM plug-ins for SwiftLint integration |
+
+---
+
+## Xcode Project Organisation
+
+Recommended folder structure (hat tip to Claude for the suggestion — it holds up well):
 
 ```
 MyApp/
@@ -44,11 +56,9 @@ MyApp/
 └── Resources/               # assets, localisation, etc.
 ```
 
-## Key Principles
-- Organise by feature, not by type. Grouping HomeView, HomeViewModel, and HomeService together beats having a flat ViewModels/ folder with 30 files in it. Feature-based organisation scales much better.
+### Key Principles
 
-- Keep the navigator clean. The file navigator is your daily workspace — if it takes more than 2–3 clicks to find something, the structure needs simplifying.
-
-- Match your filesystem. With real folders, what you see in Finder matches what you see in Xcode. This makes Git diffs, PR reviews, and onboarding new devs significantly easier.
-
-- Use Swift Package Manager for true modularity. If your app grows large, extracting features into local Swift packages (via File → New → Package) gives you proper module boundaries, faster compile times, and enforced separation of concerns — better than just folder organisation alone.
+* Organise by feature, not by type.** Grouping `HomeView`, `HomeViewModel`, and `HomeService` together beats a flat `ViewModels/` folder with 30 files in it. Feature-based organisation scales much better.
+* Keep the navigator clean.** The file navigator is your daily workspace — if it takes more than 2–3 clicks to find something, the structure needs simplifying.
+* Match your filesystem.** With real folders, what you see in Finder matches what you see in Xcode. This makes Git diffs, PR reviews, and onboarding new devs significantly easier.
+* Use Swift Package Manager for true modularity.** If your app grows large, extracting features into local Swift packages (`File → New → Package`) gives you proper module boundaries, faster compile times, and enforced separation of concerns — better than folder organisation alone.
