@@ -1,3 +1,12 @@
+# Well-Known Project Organisations
+
+* [Flat Structure](#flat-structure)
+* [Type-Based Structure](#type-based-structure)
+* [Feature-Based Structure](#feature-based-structure)
+* [MVVM-C](#mvvm-c-with-coordinators)
+* [TCA - The Composible Architecture](#tca---the-composable-architecture)
+* [SPM Modular](#spm-modular-swift-package-management)
+
 # Flat Structure
 
 Best for: solo projects, prototypes, experiments, small projects.

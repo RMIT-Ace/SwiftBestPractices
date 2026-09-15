@@ -33,4 +33,9 @@ Keep watching this space. More to come.
 
 ## Xcode Project Organisation
 
-* [Recommended Folder Structure](./docs/project-organisation.md)
+* [Flat Structure](./docs/project-organisation.md#flat-structure)
+* [Type-Based Structure](./docs/project-organisation.md#type-based-structure)
+* [Feature-Based Structure](./docs/project-organisation.md#feature-based-structure)
+* [MVVM-C](./docs/project-organisation.md#mvvm-c-with-coordinators)
+* [TCA - The Composible Architecture](./docs/project-organisation.md#tca---the-composable-architecture)
+* [SPM Modular](./docs/project-organisation.md#spm-modular-swift-package-management)
