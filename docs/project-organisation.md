@@ -90,3 +90,42 @@ MyApp/
 │   └── Services/
 └── Resources/
 ```
+
+# TCA - The Composable Architecture
+
+Best for: Strict unidirectional data flow.
+
+```
+MyApp/
+├── App/
+│   ├── AppFeature.swift       # Root reducer
+│   └── AppView.swift
+├── Features/
+│   ├── Home/
+│   │   ├── HomeFeature.swift  # Reducer + State + Action
+│   │   └── HomeView.swift
+│   └── Profile/
+│       ├── ProfileFeature.swift
+│       └── ProfileView.swift
+├── Dependencies/              # TCA dependency clients
+└── Resources/
+```
+
+# SPM Modular (Swift Package Management)
+
+Best for: writing (swift) packages.
+
+```
+MyApp/                          # Xcode app target (thin shell)
+Packages/
+├── AppFeature/                 # Root feature package
+├── HomeFeature/
+├── ProfileFeature/
+├── CoreUI/                     # Shared design system
+├── Networking/
+└── Models/
+```
+
+Each feature is a separate local Swift package with its own Package.swift. The app target just composes them. This is the pattern used by large teams (and by Apple internally). Gives you compile-time module boundaries and significantly faster incremental builds. 
+
+Reference: [Apple's Organizing your code with local packages](https://developer.apple.com/documentation/xcode/organizing-your-code-with-local-packages)
