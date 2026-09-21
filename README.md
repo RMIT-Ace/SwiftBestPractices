@@ -31,7 +31,8 @@ Keep watching this space. More to come.
 
 ---
 
-## Xcode Project Organisation
+
+# Xcode Project Organisation
 
 * [Flat Structure](./docs/project-organisation.md#flat-structure)
 * [Type-Based Structure](./docs/project-organisation.md#type-based-structure)
@@ -39,3 +40,7 @@ Keep watching this space. More to come.
 * [MVVM-C](./docs/project-organisation.md#mvvm-c-with-coordinators)
 * [TCA - The Composible Architecture](./docs/project-organisation.md#tca---the-composable-architecture)
 * [SPM Modular](./docs/project-organisation.md#spm-modular-swift-package-management)
+
+# Styling Your Code - Linting
+
+* [Styling your code with Swift-Format](./docs/lint-swift-format.md)
