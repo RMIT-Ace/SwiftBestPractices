@@ -43,4 +43,4 @@ Keep watching this space. More to come.
 
 # Styling Your Code - Linting
 
-* [Styling your code with Swift-Format](./docs/lint-swift-format.md)
+* [Swift Best Practices: Keep Your Code Clean with Swift-Format](./docs/lint-swift-format.md)
